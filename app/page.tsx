@@ -112,7 +112,9 @@ export default function Home() {
           <p className="logo">
             RealEstate<span>IQ</span>
           </p>
-          <p className="header-tagline">AI-powered real estate deal analysis for first-time investors.</p>
+          <p className="header-tagline">
+            The AI-powered real estate investment analyzer built for your first deal — and every deal after.
+          </p>
         </div>
       </header>
 

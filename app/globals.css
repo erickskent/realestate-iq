@@ -63,9 +63,11 @@ p {
 }
 
 .logo {
+  flex: none;
   font-size: 1.5rem;
   font-weight: 800;
   letter-spacing: -0.02em;
+  white-space: nowrap;
 }
 
 .logo span {
@@ -73,8 +75,22 @@ p {
 }
 
 .header-tagline {
+  flex: 1 1 18rem;
+  max-width: 34rem;
   color: #c7d4e8;
   font-size: 0.95rem;
+  line-height: 1.45;
+  text-align: right;
+  text-wrap: balance;
+}
+
+@media (max-width: 640px) {
+  .header-tagline {
+    flex-basis: 100%;
+    max-width: none;
+    font-size: 0.9rem;
+    text-align: left;
+  }
 }
 
 /* Intro */

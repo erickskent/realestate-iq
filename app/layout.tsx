@@ -3,7 +3,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "RealEstateIQ",
-  description: "AI-powered real estate deal analysis for first-time investors.",
+  description:
+    "Analyze rental properties with RealEstateIQ. Calculate cash flow, cap rates, investment returns, and risks with AI-powered insights to make smarter real estate decisions.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
