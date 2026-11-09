@@ -8,6 +8,7 @@ frontend:
         - npm ci
     build:
       commands:
+        - node scripts/write-env-production.mjs
         - npm run build
   artifacts:
     baseDirectory: .next

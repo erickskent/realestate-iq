@@ -45,3 +45,19 @@ export function assertClose(actual: number, expected: number, tolerance = 0.01):
     throw new Error(`Expected ${actual} to be within ${tolerance} of ${expected}`);
   }
 }
+
+/** A well-formed AI answer for the example property, used in place of a real Claude response. */
+export const VALID_ASSESSMENT = {
+  summary: "The property shows modest positive cash flow of $90.40 a month.",
+  risks: [
+    { title: "Thin cash flow", explanation: "Monthly cash flow is $90.40." },
+    { title: "Low cash-on-cash return", explanation: "The return is 1.67% on $65,000 invested." },
+    { title: "Vacancy exposure", explanation: "Break-even vacancy is 8.77%." },
+  ],
+  improvements: [{ title: "Negotiate price", explanation: "The break-even price is $266,982.61." }],
+  assumptionsToVerify: [
+    { assumption: "Monthly rent of $2,400", howToVerify: "Compare signed leases for similar units." },
+    { assumption: "Insurance of $1,500/yr", howToVerify: "Get a written insurance quote." },
+    { assumption: "Property taxes of $3,000/yr", howToVerify: "Check the county tax record." },
+  ],
+};

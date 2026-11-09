@@ -5,6 +5,7 @@ import { analyzeDeal, type DealAnalysis } from "@/lib/calculations";
 import { FIELD_GROUPS, validateInputs, type FieldKey, type RawInputs } from "@/lib/dealInputs";
 import { formatCurrency, formatPercent } from "@/lib/format";
 import { formReducer, INITIAL_FORM_STATE } from "@/lib/formState";
+import AiAnalysis from "./AiAnalysis";
 import DealAssessment from "./DealAssessment";
 import NumberField from "./NumberField";
 import RiskAnalysis from "./RiskAnalysis";
@@ -95,6 +96,8 @@ export default function DealAnalyzer() {
           </p>
         </section>
       </div>
+
+      <AiAnalysis inputs={validation.inputs} />
 
       <section className="intel-intro" aria-labelledby="intel-heading">
         <div className="intel-title">
